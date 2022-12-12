@@ -1,0 +1,35 @@
+<main class="container-fluid">
+	<div class="row pt-2">
+		<div class="col-12">
+			<mat-toolbar>
+				<button mat-icon-button color="primary" aria-label="menu" routerLink="/movies">
+					<mat-icon>arrow_back</mat-icon>
+				</button>
+			</mat-toolbar>
+		</div>
+
+
+		<!-- Etiquetas a renderizar - INICIO -->
+		<div class="col-12 col-md-4 text-center justify-content-center mx-auto">
+			<div class="card border-0">
+				<img src="{{movie.attributes.poster}}" class="rounded mx-auto d-block img-thumbnail border-0 shadow-4-strong" alt="{{movie.attributes.slug}}">
+				<div class="card-body">
+					<h5 class="card-title">{{movie.attributes.title}}</h5>
+					<p class="card-text">{{movie.attributes.summary}}</p>
+					<div class="stats">
+						<div class="half divisor">
+							<div class="stat">{{movie.attributes.box_office}}</div>
+							<div class="stat-value">Box Office</div>
+						</div>
+						<div class="half">
+							<div class="stat">{{movie.attributes.budget}}</div>
+							<div class="stat-value">Budget</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Etiquetas a renderizar - FIN -->
+			
+	</div>
+</main>
